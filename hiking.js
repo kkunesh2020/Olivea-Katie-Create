@@ -8,8 +8,8 @@ HorizontalLine fastLine = new HorizontalLine(50, 2.5);
 
 //since these are variables we don't want to ever change in the code, we capitalize them
 
-/* @pjs preload="tree.png"; */
-PImage TreeImage;
+/* @pjs preload="betterTree.png"; */
+PImage betterTreeImage;
 
 //This function only runs once at the start of the program
 void setup() {
@@ -17,7 +17,7 @@ void setup() {
 
   frameRate(30); //how many times the draw function is called per second
 
-  TreeImage = loadImage("tree.png");
+  betterTreeImage = loadImage("betterTree.png");
 
 }
 
@@ -31,7 +31,7 @@ void draw() {
 
   fastLine.moveLine();
 
-  image(TreeImage, 400, 300);
+  image(betterTreeImage, 200, 5);
 
 }
 
@@ -92,7 +92,7 @@ class Tree {
     }
 
     void drawTree() {
-        image(TreeImage, 400, 300);
+        image(betterTreeImage, 400, 100);
     }
 
 
