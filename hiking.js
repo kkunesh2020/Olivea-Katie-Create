@@ -95,10 +95,14 @@ class Tree {
 
     void update(var speed){
       xPosition -= speed;
+
+      if (xPosition < -700) {
+        xPosition = WINDOW_WIDTH + 300;
+      }
     }
 
     void drawAndUpdate() {
-      var treeSpeed = 2;
+      var treeSpeed = 5;
       drawTree();
       update(treeSpeed);
     }
