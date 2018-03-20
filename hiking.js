@@ -96,7 +96,13 @@ class Tree {
     }
 
     void update(var speed){
-      xPosition -= speed; 
+      xPosition -= speed;
+    }
+
+    void drawAndUpdate() {
+      var treeSpeed = 2;
+      drawTree();
+      update(treeSpeed);
     }
 
 }
