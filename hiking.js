@@ -8,6 +8,7 @@ HorizontalLine fastLine = new HorizontalLine(50, 2.5);
 
 //since these are variables we don't want to ever change in the code, we capitalize them
 
+
 //This function only runs once at the start of the program
 void setup() {
   size(WINDOW_WIDTH, WINDOW_HEIGHT); //sets the size of the window
@@ -81,6 +82,11 @@ class Tree {
     treeHeight = random(30, tH);
     treeWidth = tW;
     xPosition = xPos;
-    treeColor = tC; 
+    treeColor = tC;
     }
+
+    void drawTree();
+
+
+
 }
