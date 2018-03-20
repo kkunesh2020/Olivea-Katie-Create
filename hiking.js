@@ -95,6 +95,8 @@ class Tree {
         image(betterTreeImage, 400, 100);
     }
 
-
+    void update(var speed){
+      xPosition -= speed; 
+    }
 
 }
