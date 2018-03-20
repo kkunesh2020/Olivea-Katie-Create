@@ -6,6 +6,8 @@ HorizontalLine slowLine = new HorizontalLine(20, 2.0);
 
 HorizontalLine fastLine = new HorizontalLine(50, 2.5);
 
+Tree testTree = new Tree(400);
+
 //since these are variables we don't want to ever change in the code, we capitalize them
 
 /* @pjs preload="betterTree.png"; */
@@ -31,7 +33,9 @@ void draw() {
 
   fastLine.moveLine();
 
-  image(betterTreeImage, 200, 5);
+  testTree.drawAndUpdate();
+
+
 
 }
 
@@ -81,14 +85,10 @@ class HorizontalLine {
 }
 
 class Tree {
-  var xPosition, yPosition, treeHeight, treeWidth;
-  var treeColor;
+  var xPosition;
 
-  Tree(var xPos, var tH, var tW, var tC) {
-    treeHeight = random(30, tH);
-    treeWidth = tW;
+  Tree(var xPos) {
     xPosition = xPos;
-    treeColor = tC;
     }
 
     void drawTree() {
