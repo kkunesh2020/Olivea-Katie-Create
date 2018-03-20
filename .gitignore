@@ -1,0 +1,3 @@
+*.pde
+.vagrant
+.DS_Store
