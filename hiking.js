@@ -5,8 +5,9 @@ var BACKGROUND_COLOR = color(190, 249, 255);
 HorizontalLine slowLine = new HorizontalLine(20, 2.0);
 
 HorizontalLine fastLine = new HorizontalLine(50, 2.5);
-
+Tree testTree2 = new Tree(100);
 Tree testTree = new Tree(400);
+
 
 //since these are variables we don't want to ever change in the code, we capitalize them
 
@@ -33,7 +34,9 @@ void draw() {
 
   fastLine.moveLine();
 
-  testTree.drawAndUpdate();
+testTree2.drawAndUpdate(3);
+
+  testTree.drawAndUpdate(5);
 
 }
 
@@ -101,8 +104,7 @@ class Tree {
       }
     }
 
-    void drawAndUpdate() {
-      var treeSpeed = 5;
+    void drawAndUpdate(treeSpeed) {
       drawTree();
       update(treeSpeed);
     }
