@@ -1,14 +1,13 @@
-//Your code goes here
-
+var WINDOW_WIDTH = 1000;
+var WINDOW_HEIGHT = 600;
+var BACKGROUND_COLOR = color(190, 249, 255);
 // Declare and contruct two objects (slowLine, fastLine) from the class HorizontalLine
 HorizontalLine slowLine = new HorizontalLine(20, 2.0);
 
 HorizontalLine fastLine = new HorizontalLine(50, 2.5);
 
 //since these are variables we don't want to ever change in the code, we capitalize them
-var WINDOW_WIDTH = 400;
-var WINDOW_HEIGHT = 400;
-var GREY = 204;
+
 //This function only runs once at the start of the program
 void setup() {
   size(WINDOW_WIDTH, WINDOW_HEIGHT); //sets the size of the window
@@ -21,7 +20,7 @@ void setup() {
 //called repeatedly
 void draw() {
 
-  background(GREY); //needed in the draw function to "clear" the screen between updates
+  background(BACKGROUND_COLOR); //needed in the draw function to "clear" the screen between updates
 
   slowLine.moveLine();
 
