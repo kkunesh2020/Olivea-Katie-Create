@@ -72,3 +72,15 @@ class HorizontalLine {
   }
 
 }
+
+class Tree {
+  var xPosition, yPosition, treeHeight, treeWidth;
+  var treeColor;
+
+  Tree(var xPos, var tH, var tW, var tC) {
+    treeHeight = random(30, tH);
+    treeWidth = tW;
+    xPosition = xPos;
+    treeColor = tC; 
+    }
+}
