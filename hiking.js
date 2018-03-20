@@ -38,6 +38,10 @@ testTree2.drawAndUpdate(3);
 
   testTree.drawAndUpdate(5);
 
+noStroke();
+fill(55);
+  rect(0, WINDOW_HEIGHT - 50, WINDOW_WIDTH, 50);
+
 }
 
 
