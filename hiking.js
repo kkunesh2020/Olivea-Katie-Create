@@ -90,7 +90,7 @@ class Tree {
     }
 
     void drawTree() {
-        image(betterTreeImage, xPosition, 100);
+        image(betterTreeImage, xPosition, 5);
     }
 
     void update(var speed){
